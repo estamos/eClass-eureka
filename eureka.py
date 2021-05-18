@@ -24,7 +24,7 @@ PASSWORD = 'password' # Your eClass password
 BASE_URL = 'https://eclass.uth.gr/modules/work/?course='
 CODE = 3014 # Ξεκινήστε με έναν κωδικό πρόσφατο καθώς είναι η αρίθμηση είναι σειριακή για όλο το eClass
             # ανεξαρτήτως μαθημάτων , τμημάτων
-ITER = 100
+ITER = 100  # Αριθμός επαναλήψεων
 PDF = '&file_type=1'
 
 DOWNLOAD_URL = BASE_URL + COURSE_CODE + '&get=' + str(CODE) + PDF
