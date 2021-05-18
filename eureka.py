@@ -13,17 +13,18 @@ import time
 # -----------------------------------------------------------------------------------------
 
 COURSE_NAME = 'COURSE_NAME'
-COURSE_CODE = 'E-CE_U_139'
+COURSE_CODE = 'ABC_U_XYZ'
 
 ECLASS_LOGIN = 'https://eclass.uth.gr'
 
-USERNAME = 'username'
-PASSWORD = 'password'
+USERNAME = 'username' # Your eClass username
+PASSWORD = 'password' # Your eClass password
 
 #   URL = 'https://eclass.uth.gr/modules/work/?course=COURSE_CODE&get=CODE&file_type=1'
 BASE_URL = 'https://eclass.uth.gr/modules/work/?course='
 CODE = 3014     # Ξεκινήστε με έναν κωδικό πρόσφατο καθώς είναι η αρίθμηση είναι σειριακή για όλο το eClass
                 # ανεξαρτήτως μαθημάτων , τμημάτων
+ITER = 100
 PDF = '&file_type=1'
 
 DOWNLOAD_URL = BASE_URL + COURSE_CODE + '&get=' + str(CODE) + PDF
@@ -43,7 +44,7 @@ web.click('Είσοδος' , tag='button') # you are logged in ^_^
 
 # -----------------------------------------------------------------------------------------
 print('Κατέβασμα αρχείων\n')
-while CODE < 4500:
+while CODE <= CODE + ITER:
     print(COURSE_NAME + ' | Εργασίες | ID =', CODE)
     web.go_to(DOWNLOAD_URL)
     CODE = CODE + 1
