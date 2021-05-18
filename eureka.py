@@ -20,10 +20,13 @@ ECLASS_LOGIN = 'https://eclass.uth.gr'
 USERNAME = 'username' # Your eClass username
 PASSWORD = 'password' # Your eClass password
 
-#   URL = 'https://eclass.uth.gr/modules/work/?course=COURSE_CODE&get=CODE&file_type=1'
+# URL = 'https://eclass.uth.gr/modules/work/?course=COURSE_CODE&get=CODE&file_type=1'
 BASE_URL = 'https://eclass.uth.gr/modules/work/?course='
-CODE = 3014 # Ξεκινήστε με έναν κωδικό πρόσφατο καθώς είναι η αρίθμηση είναι σειριακή για όλο το eClass
-            # ανεξαρτήτως μαθημάτων , τμημάτων
+CODE = 3014 # Μπορεί να βρεθεί από το ημερολόγιο τοποθετώντας τον δείκτη του ποντικιού πάνω στο στρογγυλό εικονίδιο 
+            # της εργασίας. Ο κωδικός φαίνεται κάτω αριστερά στον browser.
+            # Σε περίπτωση που η εργασία έχει ανέβει αλλά είναι κρυφή και δεν φαίνεται στο ημερολόγιο, ξεκινήστε με 
+            # έναν κωδικό πρόσφατο καθώς είναι η αρίθμηση είναι σειριακή για όλο το eClass ανεξαρτήτως μαθημάτων, 
+            # τμημάτων.
 ITER = 100  # Αριθμός επαναλήψεων
 PDF = '&file_type=1'
 
