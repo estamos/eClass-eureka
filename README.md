@@ -1,5 +1,8 @@
 # eClass-eureka
 eClass eureka!
+> Tested on Open eClass 3.10.2
+> 
+> You can see your Institutes eClass version on [Σχετικά](https://eclass.YOUR_INSTITUTE.gr/info/about.php).
 
 ## What is eureka
 Eureka is a python script which uses webbot to automate and search into courses assignments files even if they are locked .
